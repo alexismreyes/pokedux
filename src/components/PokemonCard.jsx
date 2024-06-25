@@ -20,8 +20,9 @@ const PokemonCard = ({pokemon,image, types, id, favorite}) => {
 
   return (
     <Card title={pokemon.name}
-    cover={<img src={image} alt={pokemon.name} />}
+    cover={<img src={image} alt={pokemon.name} style={{width:225}}/>}
     extra={<StarButton isFavorite={favorite} onClick={ handleOnFavorite } />}
+    className="poke-card"
     >
       <Meta description={typePokemon} />
     </Card>
